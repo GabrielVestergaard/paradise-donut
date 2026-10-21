@@ -1,0 +1,59 @@
+/* Paradise Donut: page styling */
+
+:root {
+    --brand: #0e6e64;      /* tropical teal: titles and names */
+    --accent: #e8604c;     /* coral: active tab */
+}
+
+body {
+    background: #ffffff;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Big title at the top */
+.page-title {
+    color: var(--brand);
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+}
+
+/* Category tabs */
+.tab {
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    padding-bottom: 6px;
+    border-bottom: 2px solid transparent;
+}
+.tab:hover {
+    color: var(--accent);
+}
+.tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+/* Round donut photos, all the same size */
+.donut-img {
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+.donut-img:hover {
+    transform: scale(1.05);
+}
+
+/* Donut names under the photos */
+.donut-name {
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    margin-top: 1rem;
+}
